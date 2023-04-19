@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+     <head>
+       <!--
+       <link rel="stylesheet" href="myStyle.css" />
+      -->
+       <meta charset="utf-8" />
+       <title>Learning Reading</title>
+       <style>
+       body {
+         float: left;
+         background-color: #cccccc;
+         font-family: "Courier New", monospace;
+         margin-left: 3%;
+       }
+       table {
+         border-color: black;
+         border-style: solid;
+         margin-left: auto;
+         margin-right: auto;
+       }
+       td,
+       th {
+         padding: 10px;
+       }
+       h3 {
+         font-size: 100%;
+       }
+       img {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+       }
+       ol {
+         font-size: 150%;
+         font-style: normal;
+       }
+       ul {
+         font-style: italic;
+         list-style-type: square;
+       }
+       /*below is a 'descendant combinator' selects em element inside of p element */
+       p em {
+         font-size: 110%;
+       }
+       /*state based selector below*/
+       a:hover {
+         color: white;
+         background-color: black;
+       }
+       #smallExample {
+         font-family: Arial, sans-serif;
+         font-size: 45%;
+       }
+       #Question1 {
+         color: red;
+         background-color: green;
+         font-size: 80%;
+       }
+       #blur {
+         color: transparent;
+         text-shadow: 0px 0 3px #000000;
+       }
+       .sideBar {
+         width: 15%;
+         float: left;
+         position: fixed;
+         overflow-y: auto;
+         top: 10%;
+         bottom: 0;
+       }
+       .content {
+         width: 75%;
+         float: left;
+         margin-left: 20%;
+       }
+       </style>
+     </head>
+
+     <body>
+       <center><h1>Reading</h1></center>
+       <img src="image1.jpg" alt="ImageOne" height="512" width="1024">
+
+       <aside class="sideBar">
+        <h2>This is a general overview of the levels of reading, with parts to our first topic we will cover, Pre-Reading</h2>
+        <ol>
+          <li>Pre-Reading:</li>
+          <ul>
+            <li>Eye Clarity</li>
+            <li>Eye Focus</li>
+            <li>Eye Tracking</li>
+          </ul>
+          <li>Inspectional Reading</li>
+          <li>Analytical Reading</li>
+          <li>Syntoptical Reading</li>
+        </ol>
+      </aside>
+
+      <nav class="content">
+       <p>Reading is a complex task, it requires a lot of <b><em>active</em></b> participation on behalf of the reader. Below you will find a table that lists some important levels of reading around
+       their respective tasks you must accomplish in them. Note that this is not an exhaustive list but a general idea of each level of reading. Each level has something unique or interesting
+       about it. However, the further levels of reading are built upon the backbone of the earlier levels. Which makes the Pre-Reading level of reading the most important level to reading
+       as any reading cannot be done without this level being sufficiently met.</p>
+       <br />
+       <p>For the first level of reading, Pre-Reading, we are mainly concerned with the abilities required to read words in the first place. These abilities are things such as eye clarity,
+       which is the ability for the eyes to see something clearly, eye focus, which is the ability for the eye to look at an object and focus their vision on it, and eye tracking, which is
+       the ability for one to sufficiently follow the words on the page at a proper pace that allows them to read successfully.</p>
+       <br />
+       <p>Below you will see a table that is a general overview of the levels and a few components of each of them.</p>
+       <table border="10" summary="elements of reading">
+         <caption><h2>The 4 Levels of Reading</h2></caption>
+         <tr>
+           <td></td>
+           <th>Pre-Reading</th>
+           <th>Inspectional Reading</th>
+           <th>Analytical Reading</th>
+           <th>Syntoptical Reading</th>
+         </tr>
+
+         <tr>
+           <th>Element 1</th>
+           <td>Eye Clarity</td>
+           <td>Inspect Table of Contents</td>
+           <td>Analyze the Author's Message</td>
+           <td>Formulate a question that hasn't been asked</td>
+         </tr>
+
+         <tr>
+           <th>Element 2</th>
+           <td>Eye Focus</td>
+           <td>Determine Author's Goal</td>
+           <td>Analyze how the Author attempts to prove their message</td>
+           <td>Read material in close proximity to your question</td>
+         </tr>
+
+         <tr>
+           <th>Element 3</th>
+           <td>Eye Tracking</td>
+           <td>Divide Author's Message into constituent parts</td>
+           <td>Agree or Disagree with Author's message; support reasons why or why not</td>
+           <td>Bring together the different readings and synthesize new understandings to solve your question</td>
+         </tr>
+       </table>
+
+       <div>
+         <p>We typically take visibility and legibility for granted. The more difficult words are when trying to read them the more mental power is wasted on converting the words into something
+         intelligible and less on understanding what we're reading. Imagine if entire paragraphs looked like the examples below, how much focus would you be putting on simply just reading the
+         text rather than understanding?<br /><br /> <b>Examples:</b></p>
+         <p id="blur">This is Blurry Text</p>
+         <br />
+         <p id="smallExample">Some text can be difficult to read if our eyes are not capable enough</p>
+       </div>
+
+       <p id="scrollText">This is the testing area where I test to see how I can scroll through the text</p>
+       <button type="button" onclick="scrollTextFunction()">Scroll Text</button>
+
+       <h3>Question #1</h3>
+       <p>Reading can be quite difficult, especially when the clarity of the words themselves are difficult to make out. In the text below try to make out what the word is and enter it for Answer #1.</p>
+       <label id="Question1">illiteracy</label>
+       <h3>Question #2</h3>
+       <p>Another aspect of reading is in understanding the words themselves. For the word listed below, think of what its primary focus is, the pursuit of what?</p>
+       <label>philosophy</label>
+       <form>
+         <p>Answer #1:<input type="text" id="a1Input"></p>
+         <p>Answer #2:<input type="text" id="a2Input"></p>
+       </form>
+       <button type="button" onclick="myFunction()">Check Answers</button>
+
+
+       <br />
+       <p>The term <abbr title="HyperText Markup Language">HTML</abbr></p>
+       <br />
+       <p>Contact info:</p>
+       <p>Email me at:<a href="mailto:rwebster1@student.egcc.edu?subject=The%20Four%20Levels%20of%20Reading&body=Greetings!">rwebster1@student.egcc.edu</a></p>
+     </nav>
+
+       <script>
+       function scrollTextFunction() {
+         //build this to use an array instead, make a string variable that pushes the word into the array when finding a space and then setting the string variable to be blank
+         if(localStorage.getItem("ScrollTextInt") == null) {
+           localStorage.setItem("ScrollTextInt", -1);
+           alert("null variable");
+         }
+         localStorage.setItem("ScrollTextInt", Number(localStorage.getItem("ScrollTextInt")) +1);
+         //alert(localStorage.getItem("ScrollTextInt"));
+
+         var finalStr = "";
+         var spaceCount = 0;
+         var markOpenTagBool = false;
+         var markOpenTagIndex;
+         var markCloseTagBool = false;
+         var markCloseTagIndex;
+         for(i in document.getElementById("scrollText").innerHTML) {
+           if(Number(localStorage.getItem("ScrollTextInt")) == spaceCount && !markOpenTagBool) {
+             finalStr += "<mark>";
+             markOpenTagIndex = i;
+             markOpenTagBool = true;
+             markCloseTagBool = false;
+           }
+           if(document.getElementById("scrollText").innerHTML[i] == " ") {
+             spaceCount++;
+           }
+           if(spaceCount > Number(localStorage.getItem("ScrollTextInt")) && !markCloseTagBool) {
+             finalStr += "</mark>";
+             markCloseTagIndex = i;
+             markOpenTagBool = false;
+             markCloseTagBool = true;
+           }
+           finalStr += document.getElementById("scrollText").innerHTML[i];
+         }
+         //alert(finalStr);
+         document.getElementById("scrollText").innerHTML = finalStr;
+       }
+
+       function myFunction() {
+         let answer1 = document.getElementById("a1Input").value;
+         let answer2 = document.getElementById("a2Input").value;
+
+         if(answer1.toLowerCase() == "illiteracy") {
+           alert("Correct! You answered 'illiteracy'");
+         } else if(answer1.toLowerCase() == ""){
+           alert("Please enter an answer for question 1");
+         } else {
+           alert("Incorrect! You answered: " + answer1 +" .The Correct answer is 'illiteracy' ");
+         }
+
+         if(answer2.toLowerCase() == "knowledge") {
+           alert("Correct! You answered 'knowledge'");
+         } else if(answer2.toLowerCase() == "") {
+           alert("Please enter an answer for question 2");
+         } else {
+           alert("Incorrect! You answered: " + answer2 + " .The correct answer is 'knowledge' as philosophy is the pursuit of knowledge");
+         }
+
+         document.getElementById("a1Input").value = "";
+         document.getElementById("a2Input").value = "";
+       }
+       </script>
+     </body>
+</html>
